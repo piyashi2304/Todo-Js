@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+   
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+  .blur{
+    filter: blur(2.5px);
+  } 
+
+#task{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+#list{
+    font-size: 40px;
+    font-weight: 100;
+    color: aliceblue;
+} 
+#taskmessage{
+    color: aliceblue;
+}
+#popup{
+    color: aliceblue;
+}
+.parent{
+    display: flex;
+    
+}
+.plus{
+    color: blue;
+    font-size: 30px;
+    border: none;
+}
+#click{ 
+background-color: black;
+ }
+#cardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px; 
+}
+.box{
+    border: 1px solid white;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+    /* opacity: 0; */
+    /* pointer-events: none; */
+}
+h3{
+    margin-top: 30px;
+    text-align: center;
+    color: brown;
+}
+#name{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
+.add{
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    background-color: brown;
+    border-radius: 15px;
+}
+.card{
+  width: 200px;
+  height: 300px;
+  border: 1px solid rgb(232, 10, 10);
+}
+.fa-solid{
+    background-image:"fa-solid fa-trash" ;
+}
