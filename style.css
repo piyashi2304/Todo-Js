@@ -84,11 +84,26 @@ h3{
     background-color: brown;
     border-radius: 15px;
 }
+.card1{
+    display: flex;
+}
 .card{
   width: 200px;
   height: 300px;
   border: 1px solid rgb(232, 10, 10);
+  /* display: flex; */
+  /* position: absolute; */
 }
-.fa-solid{
-    background-image:"fa-solid fa-trash" ;
+.xyz{
+    background-color: blue;
+    /* position: relative;
+    top: 180px;
+    left: 50px; */
+    font-size: 20px;
+
+}
+.abc {
+    background-color: aqua;
+    font-size: 20px;
+    color: rgb(37, 9, 246);
 }

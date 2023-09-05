@@ -3,6 +3,7 @@ let addcardPopup=document.getElementById("addcardPopup")
 let maincontainer = document.getElementById("main")
 let additempopup = document.getElementById("additempopup")
 let taskmessage = document.getElementById("taskmessage")
+// let single = document.getElementById('single')
 
 function showPopup(){
     addcardPopup.classList.remove("hide")
@@ -30,6 +31,7 @@ function addcard(){
    var addsubtask = document.createElement("button")
    var deletecard = document.createElement("button") 
 
+//    addcard.classList.add('card1')
    cardcontainer.appendChild(card)
    card.appendChild(heading)
    card.appendChild(hr)
@@ -41,10 +43,12 @@ function addcard(){
    heading.innerText = cardname.value
    cardname.value = ""
    addsubtask.innerText = "+"
-   deletecard.innerText = "-";
+   addsubtask.classList.add('xyz')
+   deletecard.setAttribute('class','fa-solid fa-trash')
+//    deletecard.classList.add('fa-solid','fa-trash')
+   deletecard.classList.add('abc')
 
-   let erase = document.createElement("I")
-   erase.classList.add("fa-solid")
+
    
 
 
@@ -57,6 +61,8 @@ function addcard(){
 })
    deletecard.addEventListener("click",function(){
     card.remove()
+    if (cardcontainer.innerText==="")
+    taskmessage.classList.remove('hide')
 
    })
 
@@ -99,4 +105,5 @@ additem.addEventListener('click',function(){
 })
 
 })
+
 }
